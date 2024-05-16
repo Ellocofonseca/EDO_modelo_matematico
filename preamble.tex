@@ -1,0 +1,51 @@
+% This is my favourite config for bibliography. Each one of the references can be briefly explained with the field "note".
+\RequirePackage[style=english]{csquotes}
+\RequirePackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\newcommand{\familynameformat}[1]{\MakeUppercase{#1}}
+\AtBeginBibliography{%
+  \renewcommand{\mkbibnamefamily}{\familynameformat}%
+}
+\renewbibmacro*{begentry}{%
+  \iffieldundef{note}
+    {\undef\bbxnote}
+    {\savefield{note}{\bbxnote}%
+     \clearfield{note}}}
+\renewbibmacro*{finentry}{%
+  \restorefield{note}{\bbxnote}%
+  \iffieldundef{note}
+    {\finentry}
+    {\setunit{\finentrypunct\par\vspace{\bibitemsep}\nobreak}
+     \textit{\printfield{note}}%
+     \finentry}}
+\let\familynameformat=\textsc
+\nocite{*}
+
+\addbibresource{bibl.bib}
+
+
+% Hyperref always required last one.
+\RequirePackage{hyperref}
+\makeatletter
+\hypersetup{%
+  hidelinks,
+  pdfstartview=Fit,%
+  pdfmenubar=true,%
+  pdftoolbar=true,%
+  bookmarksopen=false,%
+  pdftitle={\@docsubtitle},%
+  pdfauthor={\templateauthor},%
+  pdfsubject={\@doctitle},%
+  pdflang={\languagename},%
+  pdfkeywords={mathematics},%
+  pdfproducer={pdfTeX}}
+\makeatother
+
+% Setting up the titlepage.
+\makeatletter%
+\title{{\large\textit{\@doctitle}}\\[0.5cm]{\Huge\color{gray}\textsc{\@docsubtitle}}}%
+\makeatother%
+\date{\today}

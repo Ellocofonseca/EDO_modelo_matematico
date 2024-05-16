@@ -1,0 +1,115 @@
+%%% Here is the class with everything we need, if you don't want, you don't have to take a look at it, as it will probably cover your needs by far. These three options are used after the class article, which this template is based in.
+% Twoside will act as an special parameter, because if the document is twosided indeed, headers and footers will be adapted in consequence.
+% I recently added the language parameter to change it more easily, so the label of all theorems are redefined accordingly, depending on which is used. Disclaimer: only available for Catalan, English and Spanish. If no language is selected, English is enforced.
+
+
+% \documentclass[a4paper,12pt,oneside,catalan]{all-in-one} %% ONESIDE
+\documentclass[a4paper,12pt,twoside,portuguese]{all-in-one} %% TWOSIDE
+
+% Here is the font I usually use, it can be changed of course.
+% In that case, these next two lines have to be deleted.
+\usepackage{ebgaramond}
+% Equations have the same font.
+\usepackage[cmintegrals,cmbraces,ebgaramond]{newtxmath}
+
+\doctitle{SME 0340 - EDO}
+\docsubtitle{Nome do Modelo Matemático}
+
+\author{Andre V. V. Codorniz \\ \texttt{ID} \and Filipe S. Lopes \\ \texttt{ID} \and Heloísa Pazeti \\ \texttt{14577991} \and Lucas M. Farias \\ \texttt{ID} \and Miguel R. Fonseca
+ \\ \texttt{14682196} \and Renan C. M. Soares \\ \texttt{ID}}
+
+% A text that goes into the footer. You can even include a logo. It can be left blank, too.
+%% Option 1: \footext{\includegraphics[width=2em]{titlepage.png}}
+%% Option 2: \footext{\copyright\ \the\year by Cookie Monster}
+% What I usually use: 
+\footext{NOME DO MODELO MATEMÁTICO}
+
+% Don't comment the command below if it's not of much inconvenience, please!
+\greetings
+% Licensing on every page? Comment if you don't want it.
+% \licensing
+
+% Last things
+\input{preamble}
+
+% Dummy text
+\usepackage{lipsum}
+
+\begin{document}
+% Interlineate, it can be changed.
+\setlength{\baselineskip}{.70cm}
+
+\begin{titlepage}
+\maketitle\vfill
+%\centering\includegraphics[width=20em]{titlepage.png}
+%\doclicenseThis
+% Very important, regarding page numbering. Keep in mind differences between oneside and twoside
+\thispagestyle{empty}
+\end{titlepage}
+
+% Table of contents
+\thispagestyle{plain}
+\renewcommand*\contentsname{Sumário}
+\tableofcontents
+\newpage
+
+\pagestyle{\defaultsettings}
+
+\section{Introdução}
+
+- Apresentação do Modelo Matemático.
+- Descreva detalhadamente o modelo que será estudado e a sua importância.
+
+\section{Desenvolvimento}
+
+- Desenvolvimento do modelo.
+
+\subsection{Seção A}
+
+- Resolução do modelo utilizando autovalores e autovetores.
+- Descreva todos os passos da resolução do sistema.
+
+
+\subsection{Seção B}
+
+- Análise gráfica do modelo.
+- Faça uma análise qualitativa do modelo através de gráficos. 
+- Apresente todos os cálculos para esboçar o gráfico do modelo. 
+- Utilize a teoria de derivadas para estudar o gráfico do modelo
+
+
+OBS: Se precisar usar alguma prova, corolário, ..., usar os templates abaixo.
+
+% Theorem environments
+\begin{theorem}
+THEOREMS
+\end{theorem}
+\begin{proof}
+\end{proof}
+\begin{corollary}
+COROLLARY
+\end{corollary}
+\begin{definition}
+DEFINITION
+\end{definition}
+\begin{remark}
+REMARK
+\end{remark}
+\begin{exercise}
+EXERCISE
+\end{exercise}
+\begin{proof}[Solução]
+SOLUTION
+\end{proof}
+\clearpage
+
+% Appendixes
+\appendix
+\section{Apêndice}
+
+
+% Bibliography
+\clearpage
+\pagestyle{\auxsettings}
+\printbibliography[heading=bibintoc]
+\end{document}
