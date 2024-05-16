@@ -1,3 +1,7 @@
+
+
+
+
 %%% Here is the class with everything we need, if you don't want, you don't have to take a look at it, as it will probably cover your needs by far. These three options are used after the class article, which this template is based in.
 % Twoside will act as an special parameter, because if the document is twosided indeed, headers and footers will be adapted in consequence.
 % I recently added the language parameter to change it more easily, so the label of all theorems are redefined accordingly, depending on which is used. Disclaimer: only available for Catalan, English and Spanish. If no language is selected, English is enforced.
@@ -8,9 +12,9 @@
 
 % Here is the font I usually use, it can be changed of course.
 % In that case, these next two lines have to be deleted.
-\usepackage{ebgaramond}
+% \usepackage{ebgaramond}
 % Equations have the same font.
-\usepackage[cmintegrals,cmbraces,ebgaramond]{newtxmath}
+% \usepackage[cmintegrals,cmbraces,ebgaramond]{newtxmath}
 
 \doctitle{SME 0340 - EDO}
 \docsubtitle{Nome do Modelo Matemático}
@@ -36,16 +40,20 @@
 \usepackage{lipsum}
 
 \begin{document}
+
+\input{pages/0-capa}
+\newpage
+
 % Interlineate, it can be changed.
 \setlength{\baselineskip}{.70cm}
 
-\begin{titlepage}
-\maketitle\vfill
-%\centering\includegraphics[width=20em]{titlepage.png}
-%\doclicenseThis
-% Very important, regarding page numbering. Keep in mind differences between oneside and twoside
-\thispagestyle{empty}
-\end{titlepage}
+% \begin{titlepage}
+% \maketitle\vfill
+% %\centering\includegraphics[width=20em]{titlepage.png}
+% %\doclicenseThis
+% % Very important, regarding page numbering. Keep in mind differences between oneside and twoside
+% \thispagestyle{empty}
+% \end{titlepage}
 
 % Table of contents
 \thispagestyle{plain}
@@ -55,61 +63,16 @@
 
 \pagestyle{\defaultsettings}
 
-\section{Introdução}
+\include{pages/1-introdução}
+\newpage
 
-- Apresentação do Modelo Matemático.
-- Descreva detalhadamente o modelo que será estudado e a sua importância.
+\include{pages/2-desenvolvimento}
+\newpage
 
-\section{Desenvolvimento}
+\include{pages/3-Apendices}
+\newpage
 
-- Desenvolvimento do modelo.
+\include{pages/4-bibliografia}
 
-\subsection{Seção A}
-
-- Resolução do modelo utilizando autovalores e autovetores.
-- Descreva todos os passos da resolução do sistema.
-
-
-\subsection{Seção B}
-
-- Análise gráfica do modelo.
-- Faça uma análise qualitativa do modelo através de gráficos. 
-- Apresente todos os cálculos para esboçar o gráfico do modelo. 
-- Utilize a teoria de derivadas para estudar o gráfico do modelo
-
-
-OBS: Se precisar usar alguma prova, corolário, ..., usar os templates abaixo.
-
-% Theorem environments
-\begin{theorem}
-THEOREMS
-\end{theorem}
-\begin{proof}
-\end{proof}
-\begin{corollary}
-COROLLARY
-\end{corollary}
-\begin{definition}
-DEFINITION
-\end{definition}
-\begin{remark}
-REMARK
-\end{remark}
-\begin{exercise}
-EXERCISE
-\end{exercise}
-\begin{proof}[Solução]
-SOLUTION
-\end{proof}
-\clearpage
-
-% Appendixes
-\appendix
-\section{Apêndice}
-
-
-% Bibliography
-\clearpage
-\pagestyle{\auxsettings}
-\printbibliography[heading=bibintoc]
 \end{document}
+
