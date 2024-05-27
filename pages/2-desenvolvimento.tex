@@ -8,7 +8,7 @@
 - Descreva todos os passos da resolução do sistema.
 \\
 %EQUAÇOES DO PROBLEMA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-EQUAÇÕES:
+SISTEMA:
 \begin{equation}
     \begin{cases}
       x_1'(t)=-\frac{f_1}{V_1}x_1(t)-\frac{f_3}{V_3}x_3(t)+f(t)\\[5pt]
@@ -17,7 +17,7 @@ EQUAÇÕES:
     \end{cases}
 \end{equation}
 
-Em forma de matriz:
+MATRIZ:
 \begin{center}
 \begin{equation}
 \renewcommand{\arraystretch}{1.8}
@@ -46,6 +46,17 @@ f(t)\\
 \end{pmatrix}}_\text{$f(t)$}
 \end{equation}
 \end{center}
+
+SOLUÇÃO HOMOGENEA:
+\begin{equation}
+\renewcommand{\arraystretch}{1.8}
+    \begin{vmatrix}
+        -\frac{f_1}{V_1}-\lambda & 0 & -\frac{f_3}{V_3}\\
+        \frac{f_1}{V_1} & -\frac{f_2}{V_2}-\lambda & 0\\
+        0 & \frac{f_2}{V_2} & \frac{f_3}{V_3}-\lambda
+    \end{vmatrix}
+    =0
+\end{equation}
 
 
 
