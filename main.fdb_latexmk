@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1716814476.25532 "main.bcf" "main.bbl" "main" 1716815381.68083 0
+["biber main"] 1716814476.25532 "main.bcf" "main.bbl" "main" 1716815646.3517 0
   "bibl.bib" 1715867681 1036 d7856bf2ed77b87e0203cbac01b1d535 ""
-  "main.bcf" 1716815381 107675 79fe197a01e18647e7d245945392c4d2 "pdflatex"
+  "main.bcf" 1716815645 107675 79fe197a01e18647e7d245945392c4d2 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1716815378.94833 "d:/LaTeX/Modelo matemático de EDO/EDO_modelo_matematico/main.tex" "main.pdf" "main" 1716815381.68148 0
+["pdflatex"] 1716815643.48994 "d:/LaTeX/Modelo matemático de EDO/EDO_modelo_matematico/main.tex" "main.pdf" "main" 1716815646.35236 0
   "all-in-one.cls" 1715867681 7952 9ce8a76319291e7a3b5382f7000b2985 ""
   "d:/LaTeX/Modelo matemático de EDO/EDO_modelo_matematico/main.tex" 1715876828 2602 f37fc19aeec5ce48f50566711f1eb237 ""
   "d:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1710418026 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -202,20 +202,20 @@
   "d:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1710431195 8221472 b7ac2e880da454a08c72573a7a027723 ""
   "d:/texlive/2024/texmf.cnf" 1710430984 713 e69b156964470283e0530f5060668171 ""
   "images/titlepage.png" 1715876828 7945 af6eab2df86d92c6272797c396d5cc7f ""
-  "main.aux" 1716815381 760 0a3dffe2b575385b134e360358ad19f9 "pdflatex"
+  "main.aux" 1716815645 760 0a3dffe2b575385b134e360358ad19f9 "pdflatex"
   "main.bbl" 1716814478 4626 ce4febbe2c7dc3f4428fc36ffcd24743 "biber main"
-  "main.out" 1716815381 608 417951a9a9332041f9542c3ed350fcc0 "pdflatex"
-  "main.run.xml" 1716815381 2339 43d9142eec5f226cade47ada084f9e3e "pdflatex"
+  "main.out" 1716815645 608 417951a9a9332041f9542c3ed350fcc0 "pdflatex"
+  "main.run.xml" 1716815645 2339 43d9142eec5f226cade47ada084f9e3e "pdflatex"
   "main.tex" 1715876828 2602 f37fc19aeec5ce48f50566711f1eb237 ""
-  "main.toc" 1716815381 443 e60106c38ab12e2e6e0f825f711c177a "pdflatex"
+  "main.toc" 1716815645 443 e60106c38ab12e2e6e0f825f711c177a "pdflatex"
   "pages/0-capa.tex" 1715877587 2042 90a846a69f553eb3970e96b11c08f1a1 ""
-  "pages/1-introdução.aux" 1716815381 4101 635bbaba632176e5f384c3a825425963 "pdflatex"
+  "pages/1-introdução.aux" 1716815645 4101 635bbaba632176e5f384c3a825425963 "pdflatex"
   "pages/1-introdução.tex" 1715876828 142 696661fa0af2d94f266d30f49d7642d4 ""
-  "pages/2-desenvolvimento.aux" 1716815381 5099 d05edffd83400995e1c677ce8b5fb61d "pdflatex"
-  "pages/2-desenvolvimento.tex" 1716815377 1741 79ea6b6050574643ca5471adbc443465 ""
-  "pages/3-Apendices.aux" 1716815381 4096 ae48053157563d16a5da41b9f183fa54 "pdflatex"
+  "pages/2-desenvolvimento.aux" 1716815645 5099 d05edffd83400995e1c677ce8b5fb61d "pdflatex"
+  "pages/2-desenvolvimento.tex" 1716815642 1794 b2b1e2b71a798cf50e4b5f6c7a415446 ""
+  "pages/3-Apendices.aux" 1716815645 4096 ae48053157563d16a5da41b9f183fa54 "pdflatex"
   "pages/3-Apendices.tex" 1715876828 46 be6dca8dff26eb378853bfe4436e04b4 ""
-  "pages/4-bibliografia.aux" 1716815381 4088 c41974972ef6c415bc836548f7f8e4b1 "pdflatex"
+  "pages/4-bibliografia.aux" 1716815645 4088 c41974972ef6c415bc836548f7f8e4b1 "pdflatex"
   "pages/4-bibliografia.tex" 1715876828 90 5459b951a21dbdaa291adf9df4113b09 ""
   "preamble.tex" 1715868500 1362 70b53f5ba2781a53d4eee1cda8da380c ""
   (generated)

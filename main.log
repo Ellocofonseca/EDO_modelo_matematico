@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.14)  27 MAY 2024 10:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.14)  27 MAY 2024 10:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -870,13 +870,13 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 52.
+(Font)              using `T1/cmr/m/scsl' instead on input line 51.
 
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 64.
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 69.
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 72.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 75.
-Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 78.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 63.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 68.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 71.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 74.
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 77.
 [4
 
 
