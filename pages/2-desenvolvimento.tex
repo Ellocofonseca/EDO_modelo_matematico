@@ -7,6 +7,47 @@
 - Resolução do modelo utilizando autovalores e autovetores.
 - Descreva todos os passos da resolução do sistema.
 
+\begin{equation}
+    \begin{cases}
+      x_1'(t)=-\frac{f_1}{V_1}x_1(t)-\frac{f_3}{V_3}x_3(t)+f(t)\\
+      x_2'(t)=\frac{f_1}{V_1}x_1(t)-\frac{f_2}{V_2}x_2(t)\\
+      x_3'(t)=\frac{f_2}{V_2}x_2(t)+\frac{f_3}{V_3}x_3(t)
+    \end{cases}
+\end{equation}
+
+Em forma de matriz:
+\begin{center}
+
+    
+\begin{equation}
+\renewcommand{\arraystretch}{1.8}
+\underbrace{\begin{pmatrix}
+    x_1'(t)\\
+    x_2'(t)\\
+    x_3'(t)
+\end{pmatrix}}_\text{$X'(t)$}
+=
+\underbrace{\begin{pmatrix}
+-\frac{f_1}{V_1} & 0 & -\frac{f_3}{V_3}\\
+\frac{f_1}{V_1} & -\frac{f_2}{V_2} & 0\\
+0 & \frac{f_2}{V_2} & \frac{f_3}{V_3}
+\end{pmatrix}}_\text{$A(t)$}
+\cdot
+\underbrace{\begin{pmatrix}
+x_1(t)\\
+x_2(t)\\
+x_3(t)
+\end{pmatrix}}_\text{$X(t)$}
++
+\underbrace{\begin{pmatrix}
+f(t)\\
+0\\
+0
+\end{pmatrix}}_\text{$f(t)$}
+\end{equation}
+\end{center}
+
+
 
 \subsection{Seção B}
 
